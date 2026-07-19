@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --color-blueprint-950: #0F2B3D;
+  --color-blueprint-900: #0A1F2C;
+  --color-cyan-400: #6EC6E8;
+  --color-cyan-600: #3E6478;
+  --color-yellow-400: #FFC857;
+  --color-warm-50: #EDEAE0;
+  --color-slate-200: #D8E4EA;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "IBM Plex Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-blueprint-950);
+  color: var(--color-slate-200);
+}
+
+::selection {
+  background-color: var(--color-cyan-400);
+  color: var(--color-blueprint-950);
+}
+
+@keyframes grid-scroll {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(40px); }
+}
+
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+.animate-grid {
+  animation: grid-scroll 8s linear infinite;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  .animate-grid {
+    animation: none;
+  }
+}
