@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 
 const PHONE = '918059224102';
-const EMAIL = 'deepanshu.masum@gmail.com';
 
 export default function Contact() {
   const headingRef = useRef(null);
@@ -107,18 +106,7 @@ export default function Contact() {
           </button>
         </form>
 
-        <div className="reveal mt-16 pt-8 border-t border-cyan-600/20">
-          <p className="font-mono text-cyan-400 text-sm tracking-widest uppercase mb-4 text-center">Contact</p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-sm">
-            <a href={`mailto:${EMAIL}`} className="text-slate-200 hover:text-yellow-400 transition-colors font-mono">
-              {EMAIL}
-            </a>
-            <span className="hidden sm:block text-cyan-600/40">·</span>
-            <a href={`https://wa.me/${PHONE}`} target="_blank" rel="noopener noreferrer" className="text-slate-200 hover:text-yellow-400 transition-colors font-mono">
-              +{PHONE.slice(0, 2)} {PHONE.slice(2)}
-            </a>
-          </div>
-        </div>
+
       </div>
     </section>
   );
