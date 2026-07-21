@@ -1,5 +1,8 @@
 import { useEffect, useRef } from 'react';
 
+const PHONE = '918059224102';
+const EMAIL = 'deepanshu.masum@gmail.com';
+
 export default function Contact() {
   const headingRef = useRef(null);
   const formRef = useRef(null);
@@ -32,11 +35,10 @@ export default function Contact() {
     const name = form.name.value.trim();
     const email = form.email.value.trim();
     const message = form.message.value.trim();
-    const subject = encodeURIComponent(`Project inquiry from ${name}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nContact: ${email}\n\nMessage:\n${message}`
+    const text = encodeURIComponent(
+      `Hi Deepanshu, I'm ${name} (${email}).\n\n${message}`
     );
-    window.location.href = `mailto:deepanshu.masum@gmail.com?subject=${subject}&body=${body}`;
+    window.open(`https://wa.me/${PHONE}?text=${text}`, '_blank');
   }
 
   return (
@@ -50,9 +52,6 @@ export default function Contact() {
           </p>
         </div>
 
-        {/* TODO: Replace the mailto: address with your real email.
-             For production: swap this client-side mailto with a Formspree
-             action="https://formspree.io/f/your-form-id" or your own backend. */}
         <form
           ref={formRef}
           className="reveal space-y-6"
@@ -74,15 +73,15 @@ export default function Contact() {
 
           <div>
             <label htmlFor="email" className="font-mono text-xs text-cyan-400 uppercase tracking-wider block mb-2">
-              Email or WhatsApp
+              Email
             </label>
             <input
               id="email"
               name="email"
-              type="text"
+              type="email"
               required
               className="w-full bg-blueprint-900 border border-cyan-600/40 rounded-lg px-4 py-3 text-warm-50 font-body text-sm placeholder-slate-500 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/30 transition-colors"
-              placeholder="you@example.com or +91 phone"
+              placeholder="you@example.com"
             />
           </div>
 
@@ -104,9 +103,22 @@ export default function Contact() {
             type="submit"
             className="w-full sm:w-auto bg-yellow-400 text-blueprint-950 font-semibold font-display px-8 py-3 rounded-lg hover:bg-yellow-300 transition-colors text-base focus-visible:outline-2 focus-visible:outline-yellow-400 focus-visible:outline-offset-2 cursor-pointer"
           >
-            Send message →
+            Send via WhatsApp →
           </button>
         </form>
+
+        <div className="reveal mt-16 pt-8 border-t border-cyan-600/20">
+          <p className="font-mono text-cyan-400 text-sm tracking-widest uppercase mb-4 text-center">Contact</p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-sm">
+            <a href={`mailto:${EMAIL}`} className="text-slate-200 hover:text-yellow-400 transition-colors font-mono">
+              {EMAIL}
+            </a>
+            <span className="hidden sm:block text-cyan-600/40">·</span>
+            <a href={`https://wa.me/${PHONE}`} target="_blank" rel="noopener noreferrer" className="text-slate-200 hover:text-yellow-400 transition-colors font-mono">
+              +{PHONE.slice(0, 2)} {PHONE.slice(2)}
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
