@@ -1,5 +1,6 @@
 import BlueprintGrid from './components/BlueprintGrid';
 import Hero from './components/Hero';
+import WhatIDo from './components/WhatIDo';
 import ShippedWork from './components/ShippedWork';
 import AlsoBuild from './components/AlsoBuild';
 import Process from './components/Process';
@@ -11,6 +12,7 @@ function App() {
     <>
       <BlueprintGrid />
       <Hero />
+      <WhatIDo />
       <ShippedWork />
       <AlsoBuild />
       <Process />
