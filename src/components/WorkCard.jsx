@@ -17,7 +17,7 @@ export default function WorkCard({ spec, status, title, subtitle, problem, build
   return (
     <article
       ref={ref}
-      className="reveal group bg-blueprint-900 border border-cyan-600/30 rounded-xl p-6 sm:p-8 flex flex-col hover:border-cyan-400/50 hover:shadow-[0_0_30px_-8px_rgba(110,198,232,0.15)] transition-all duration-300"
+      className="reveal group bg-blueprint-900 border border-cyan-600/30 rounded-xl p-6 sm:p-8 flex flex-col hover:border-cyan-400/50 hover:shadow-[0_0_30px_-8px_rgba(34,211,238,0.15)] transition-all duration-300"
     >
       <div className="flex items-start justify-between mb-5">
         <span className="font-mono text-xs text-cyan-600 bg-cyan-600/10 px-2.5 py-1 rounded">{spec}</span>

@@ -105,7 +105,7 @@ function ServiceCard({ icon, title, description }) {
   return (
     <div
       ref={ref}
-      className="reveal bg-blueprint-900 border border-cyan-600/30 rounded-xl p-6 sm:p-8 hover:border-cyan-400/50 hover:shadow-[0_0_30px_-8px_rgba(110,198,232,0.15)] transition-all duration-300 flex flex-col"
+      className="reveal bg-blueprint-900 border border-cyan-600/30 rounded-xl p-6 sm:p-8 hover:border-cyan-400/50 hover:shadow-[0_0_30px_-8px_rgba(34,211,238,0.15)] transition-all duration-300 flex flex-col"
     >
       <div className="mb-4" dangerouslySetInnerHTML={{ __html: icon }} />
       <h3 className="font-display text-warm-50 text-lg font-semibold mb-2">{title}</h3>
