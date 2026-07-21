@@ -39,8 +39,8 @@ function TerminalWindow() {
 
   return (
     <div className="w-full max-w-lg mx-auto" aria-hidden="true">
-      <div className="bg-[#141a2e] rounded-xl border border-green-500/20 shadow-[0_0_40px_-12px_rgba(34,197,94,0.15)] overflow-hidden">
-        <div className="flex items-center gap-2 px-4 py-3 bg-[#1a2035] border-b border-green-500/10">
+      <div className="bg-[#1e2539] rounded-xl border border-green-500/20 shadow-[0_0_40px_-12px_rgba(34,197,94,0.15)] overflow-hidden">
+        <div className="flex items-center gap-2 px-4 py-3 bg-[#2a3145] border-b border-green-500/10">
           <span className="w-3 h-3 rounded-full bg-red-500/80" />
           <span className="w-3 h-3 rounded-full bg-yellow-500/80" />
           <span className="w-3 h-3 rounded-full bg-green-500/80" />

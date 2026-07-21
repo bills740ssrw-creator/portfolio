@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-blueprint-950: #1a2035;
-  --color-blueprint-900: #222a40;
+  --color-blueprint-950: #2a3145;
+  --color-blueprint-900: #323a4e;
   --color-cyan-400: #22c55e;
   --color-cyan-600: #3b7a4a;
   --color-yellow-400: #facc15;
@@ -10,7 +10,7 @@
   --color-slate-200: #a8b5cf;
 
   --font-display: "Playfair Display", serif;
-  --font-body: "Outfit", sans-serif;
+  --font-body: "Quicksand", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 }
 
