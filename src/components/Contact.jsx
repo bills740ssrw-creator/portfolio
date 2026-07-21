@@ -44,9 +44,9 @@ export default function Contact() {
     <section id="contact" className="py-20 md:py-28 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
         <div ref={headingRef} className="reveal mb-12 text-center">
-          <p className="font-mono text-green-400 text-sm tracking-widest uppercase mb-3">Contact</p>
+          <p className="font-mono text-green-400 text-sm tracking-widest uppercase mb-3 font-semibold">Contact</p>
           <h2 className="font-display text-warm-50 text-3xl sm:text-4xl font-bold mb-4">Start a Project</h2>
-          <p className="text-slate-200 max-w-lg mx-auto">
+          <p className="text-slate-200 max-w-lg mx-auto font-semibold">
             Tell me what you&apos;re building. I&apos;ll reply within 24 hours with a rough timeline and budget range.
           </p>
         </div>
@@ -57,7 +57,7 @@ export default function Contact() {
           onSubmit={handleSubmit}
         >
           <div>
-            <label htmlFor="name" className="font-mono text-xs text-green-400 uppercase tracking-wider block mb-2">
+            <label htmlFor="name" className="font-mono text-xs text-green-400 uppercase tracking-wider block mb-2 font-bold">
               Name
             </label>
             <input
@@ -71,7 +71,7 @@ export default function Contact() {
           </div>
 
           <div>
-            <label htmlFor="email" className="font-mono text-xs text-green-400 uppercase tracking-wider block mb-2">
+            <label htmlFor="email" className="font-mono text-xs text-green-400 uppercase tracking-wider block mb-2 font-bold">
               Email
             </label>
             <input
@@ -85,7 +85,7 @@ export default function Contact() {
           </div>
 
           <div>
-            <label htmlFor="message" className="font-mono text-xs text-green-400 uppercase tracking-wider block mb-2">
+            <label htmlFor="message" className="font-mono text-xs text-green-400 uppercase tracking-wider block mb-2 font-bold">
               Project Description
             </label>
             <textarea

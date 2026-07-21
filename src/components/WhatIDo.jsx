@@ -70,9 +70,9 @@ export default function WhatIDo() {
     <section id="what-i-do" className="py-20 md:py-28 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div ref={ref} className="reveal mb-12">
-          <p className="font-mono text-green-400 text-sm tracking-widest uppercase mb-3">Services</p>
+          <p className="font-mono text-green-400 text-sm tracking-widest uppercase mb-3 font-semibold">Services</p>
           <h2 className="font-display text-warm-50 text-3xl sm:text-4xl font-bold">What I Do</h2>
-          <p className="text-slate-200 mt-3 max-w-2xl">
+          <p className="text-slate-200 mt-3 max-w-2xl font-semibold">
             From polished marketing sites to internal dashboards and AI agents — 
             here&apos;s the work I take on.
           </p>
@@ -109,7 +109,7 @@ function ServiceCard({ icon, title, description }) {
     >
       <div className="mb-4" dangerouslySetInnerHTML={{ __html: icon }} />
       <h3 className="font-display text-warm-50 text-lg font-semibold mb-2">{title}</h3>
-      <p className="text-slate-200 text-sm leading-relaxed flex-1">{description}</p>
+      <p className="text-slate-200 text-sm leading-relaxed flex-1 font-semibold">{description}</p>
     </div>
   );
 }

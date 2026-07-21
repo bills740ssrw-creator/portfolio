@@ -93,7 +93,7 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto w-full">
         <div ref={headlineRef} className="reveal flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <div className="flex-1 space-y-6">
-            <p className="font-mono text-green-400 text-sm tracking-widest uppercase">Freelance Developer · Rewari, IN</p>
+            <p className="font-mono text-green-400 text-sm tracking-widest uppercase font-semibold">Freelance Developer · Rewari, IN</p>
             <h1 className="font-display text-warm-50 text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
               I build websites, CRM dashboards, and AI automations.
             </h1>
