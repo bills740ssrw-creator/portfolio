@@ -40,12 +40,13 @@ export default function ShippedWork() {
 
           <WorkCard
             spec="SPEC-02"
-            status="Live · Rewari, HR"
+            status="Live · omjuice.in"
             title="OM Juice & Shakes"
             subtitle="Milkshake restaurant website"
             problem="A local milkshake shop in Rewari needed a website that captured the energy of their space — not a generic menu page, but something that felt like walking into the shop. No stock photos, no templates."
             build="Built a video-first experience with a custom hero that crossfades between two looping shots using a ping-pong architecture — each clip plays forward, then the other crossfades in while the first rewinds, creating a seamless loop. Scroll-speed ramping syncs video playback rate to scroll position for a cinematic feel."
             result="The site serves as the shop&apos;s primary digital presence. The video hero loads fast thanks to careful compression and lazy initialization. Scroll-synced video creates an immersive brand feel that static competitors&apos; pages lack."
+            link="https://omjuice.in"
           />
         </div>
       </div>
