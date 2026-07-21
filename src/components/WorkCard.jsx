@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-export default function WorkCard({ spec, status, title, subtitle, problem, build, result, link }) {
+export default function WorkCard({ spec, status, title, subtitle, problem, build, result, link, image }) {
   const ref = useRef(null);
 
   useEffect(() => {
@@ -23,6 +23,12 @@ export default function WorkCard({ spec, status, title, subtitle, problem, build
         <span className="font-mono text-xs text-green-600 bg-green-600/10 px-2.5 py-1 rounded font-semibold">{spec}</span>
         <span className="font-mono text-xs text-green-400 bg-green-400/10 px-2.5 py-1 rounded font-semibold">{status}</span>
       </div>
+
+      {image && (
+        <div className="mb-5 -mx-6 sm:-mx-8 -mt-2 overflow-hidden rounded-t-xl">
+          <img src={image} alt={`${title} screenshot`} className="w-full h-auto object-cover border-b border-green-600/20" />
+        </div>
+      )}
 
       <h3 className="font-display text-warm-50 text-xl sm:text-2xl font-semibold mb-1">{title}</h3>
       <p className="font-mono text-sm text-green-400 mb-5 font-semibold">{subtitle}</p>
