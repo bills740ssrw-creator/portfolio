@@ -19,7 +19,7 @@ export default function ShippedWork() {
     <section id="work" className="py-20 md:py-28 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div ref={ref} className="reveal mb-12">
-          <p className="font-mono text-cyan-400 text-sm tracking-widest uppercase mb-3">Portfolio</p>
+          <p className="font-mono text-green-400 text-sm tracking-widest uppercase mb-3">Portfolio</p>
           <h2 className="font-display text-warm-50 text-3xl sm:text-4xl font-bold">Shipped Work</h2>
           <p className="text-slate-200 mt-3 max-w-2xl">
             Projects I&apos;ve built, launched, and maintained — with real URLs you can visit today.

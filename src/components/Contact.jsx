@@ -44,7 +44,7 @@ export default function Contact() {
     <section id="contact" className="py-20 md:py-28 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
         <div ref={headingRef} className="reveal mb-12 text-center">
-          <p className="font-mono text-cyan-400 text-sm tracking-widest uppercase mb-3">Contact</p>
+          <p className="font-mono text-green-400 text-sm tracking-widest uppercase mb-3">Contact</p>
           <h2 className="font-display text-warm-50 text-3xl sm:text-4xl font-bold mb-4">Start a Project</h2>
           <p className="text-slate-200 max-w-lg mx-auto">
             Tell me what you&apos;re building. I&apos;ll reply within 24 hours with a rough timeline and budget range.
@@ -57,7 +57,7 @@ export default function Contact() {
           onSubmit={handleSubmit}
         >
           <div>
-            <label htmlFor="name" className="font-mono text-xs text-cyan-400 uppercase tracking-wider block mb-2">
+            <label htmlFor="name" className="font-mono text-xs text-green-400 uppercase tracking-wider block mb-2">
               Name
             </label>
             <input
@@ -65,13 +65,13 @@ export default function Contact() {
               name="name"
               type="text"
               required
-              className="w-full bg-blueprint-900 border border-cyan-600/40 rounded-lg px-4 py-3 text-warm-50 font-body text-sm placeholder-slate-500 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/30 transition-colors"
+              className="w-full bg-blueprint-900 border border-green-600/40 rounded-lg px-4 py-3 text-warm-50 font-body text-sm placeholder-slate-500 focus:outline-none focus:border-green-400 focus:ring-1 focus:ring-green-400/30 transition-colors"
               placeholder="Your name"
             />
           </div>
 
           <div>
-            <label htmlFor="email" className="font-mono text-xs text-cyan-400 uppercase tracking-wider block mb-2">
+            <label htmlFor="email" className="font-mono text-xs text-green-400 uppercase tracking-wider block mb-2">
               Email
             </label>
             <input
@@ -79,13 +79,13 @@ export default function Contact() {
               name="email"
               type="email"
               required
-              className="w-full bg-blueprint-900 border border-cyan-600/40 rounded-lg px-4 py-3 text-warm-50 font-body text-sm placeholder-slate-500 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/30 transition-colors"
+              className="w-full bg-blueprint-900 border border-green-600/40 rounded-lg px-4 py-3 text-warm-50 font-body text-sm placeholder-slate-500 focus:outline-none focus:border-green-400 focus:ring-1 focus:ring-green-400/30 transition-colors"
               placeholder="you@example.com"
             />
           </div>
 
           <div>
-            <label htmlFor="message" className="font-mono text-xs text-cyan-400 uppercase tracking-wider block mb-2">
+            <label htmlFor="message" className="font-mono text-xs text-green-400 uppercase tracking-wider block mb-2">
               Project Description
             </label>
             <textarea
@@ -93,14 +93,14 @@ export default function Contact() {
               name="message"
               rows={5}
               required
-              className="w-full bg-blueprint-900 border border-cyan-600/40 rounded-lg px-4 py-3 text-warm-50 font-body text-sm placeholder-slate-500 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/30 transition-colors resize-y"
+              className="w-full bg-blueprint-900 border border-green-600/40 rounded-lg px-4 py-3 text-warm-50 font-body text-sm placeholder-slate-500 focus:outline-none focus:border-green-400 focus:ring-1 focus:ring-green-400/30 transition-colors resize-y"
               placeholder="What are you building? Timeline? Budget range?"
             />
           </div>
 
           <button
             type="submit"
-            className="w-full sm:w-auto bg-yellow-400 text-blueprint-950 font-semibold font-display px-8 py-3 rounded-lg hover:bg-yellow-300 transition-colors text-base focus-visible:outline-2 focus-visible:outline-yellow-400 focus-visible:outline-offset-2 cursor-pointer"
+            className="w-full sm:w-auto bg-green-500 text-white font-semibold font-display px-8 py-3 rounded-lg hover:bg-green-400 transition-colors text-base focus-visible:outline-2 focus-visible:outline-green-500 focus-visible:outline-offset-2 cursor-pointer"
           >
             Send via WhatsApp →
           </button>
