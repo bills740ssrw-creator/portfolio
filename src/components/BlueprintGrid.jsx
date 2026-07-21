@@ -1,7 +1,7 @@
 export default function BlueprintGrid() {
   return (
     <div className="fixed inset-0 pointer-events-none overflow-hidden" style={{ zIndex: -1 }}>
-      <div className="absolute inset-0 opacity-[0.04] animate-grid">
+      <div className="absolute inset-0 opacity-[0.08] animate-grid">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">

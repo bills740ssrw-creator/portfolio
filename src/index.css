@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-blueprint-950: #2a3145;
-  --color-blueprint-900: #323a4e;
+  --color-blueprint-950: #f1f5f9;
+  --color-blueprint-900: #ffffff;
   --color-cyan-400: #22c55e;
-  --color-cyan-600: #3b7a4a;
-  --color-yellow-400: #facc15;
-  --color-warm-50: #f8fafc;
-  --color-slate-200: #a8b5cf;
+  --color-cyan-600: #15803d;
+  --color-yellow-400: #ca8a04;
+  --color-warm-50: #0f172a;
+  --color-slate-200: #475569;
 
   --font-display: "Playfair Display", serif;
   --font-body: "Quicksand", sans-serif;
@@ -37,7 +37,7 @@ body {
 
 ::selection {
   background-color: var(--color-cyan-400);
-  color: var(--color-blueprint-950);
+  color: #ffffff;
 }
 
 @keyframes grid-scroll {
