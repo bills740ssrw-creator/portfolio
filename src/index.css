@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-blueprint-950: #0f172a;
-  --color-blueprint-900: #1e293b;
+  --color-blueprint-950: #1a2035;
+  --color-blueprint-900: #222a40;
   --color-cyan-400: #22c55e;
   --color-cyan-600: #3b7a4a;
   --color-yellow-400: #facc15;
   --color-warm-50: #f8fafc;
-  --color-slate-200: #94a3b8;
+  --color-slate-200: #a8b5cf;
 
-  --font-display: "Inter", sans-serif;
-  --font-body: "Inter", sans-serif;
+  --font-display: "Playfair Display", serif;
+  --font-body: "Outfit", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 }
 
